@@ -11,7 +11,7 @@ class Stat(models.Model):
         verbose_name = 'Stats'
         verbose_name_plural = 'Stats'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.referer
 
 
@@ -29,5 +29,5 @@ class Mobile(models.Model):
         verbose_name = 'Mobile'
         verbose_name_plural = 'Mobile'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.user_agent
